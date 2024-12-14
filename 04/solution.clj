@@ -11,11 +11,12 @@
   (apply mapv vector m))
 
 ; pad every line so diagonals become vertical lines:
-; LOLOL
-;  LOLOL
-;   LOLOL
+; LOLOX
+;  LOLML
+;   LOAOL
+;    LSLOL
 ; transpose the text
-; paste the text into the text editor and find every XMAS and SAMX
+; paste the text into a text editor and find every XMAS and SAMX with Ctrl + F
 (def pre-diag-to-left
   (->> (slurp "input.in")
        (clojure.string/split-lines)
@@ -26,9 +27,10 @@
 diag-to-left
 
 ; pad the lines the other way:
-;   LOLOL
-;  LOLOL
-; LOLOL
+;    SOLOL
+;   LALOL
+;  LOMOL
+; LOLXL
 (def pre-diag-to-right
   (->> (slurp "input.in")
        (clojure.string/split-lines)
